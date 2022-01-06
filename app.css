@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Luxurious Roman', cursive;
+}
+a{
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #adafb1;
+
+}
+a:hover {
+    border-bottom: 1px solid #FF7D1A;
+    color: #0061AD;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    padding-left: 30px;
+}
+nav{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 12px auto;
+    align-items: center;
+    border-bottom: 1px solid #adafb1;
+    place-items: center;
+}
+.avatar img {
+    position: relative;
+    right: 150px;
+    height: 50px;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+}
+.product img {
+    width: 90%;
+    border-radius: 15px;
+    transition: 0.7s;
+}
+.content {
+        position: relative;
+    align-items: center;
+    padding-top: 5%;
+    width: 60%;
+}
+.content h3 {
+    color: #FF7D1A;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.content h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+}
+.content p {
+    width: 70%;
+    line-height: 1.5;
+    color: #adafb1;
+    padding-bottom: 20px;
+}
+button {
+    background: #FF7D1A;
+    border: none;
+    width: 25%;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    transition: 0.4s ease-in-out;
+}
+button:hover{
+    background: #FF9E53;
+}
+@media (max-width : 640px) {
+    ul li {
+display: none;
+    }
+    nav{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .avatar img {
+        position: relative;
+        right: 20px;
+        height: 35px;
+    }
+    section{
+        width: 100%;
+        margin: 30px auto;
+        display: inline;
+        text-align: center;
+    }
+    .product img {
+        width: 90%;
+    }
+    .content {
+    width: 90%;
+    margin: 0 auto;
+}
+.content p {
+    width: 100%;
+}
+button {
+    width: 40%;
+    left: 0%;
+}
+}
